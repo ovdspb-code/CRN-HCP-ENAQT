@@ -1,0 +1,1677 @@
+{
+  "meta": {
+    "name": "Human task battery v1 (CRN/ENAQT protocol)",
+    "notes": "Ports defined by dn_fsname patterns only (pre-registered). Leakage model for P_D.",
+    "grids": {
+      "epsilon_disorder_grid": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        5.0,
+        8.0,
+        12.0
+      ],
+      "kappa_deph_grid": [
+        0.001,
+        0.00215443469,
+        0.00464158883,
+        0.01,
+        0.0215443469,
+        0.0464158883,
+        0.1,
+        0.215443469,
+        0.464158883,
+        1.0,
+        2.15443469,
+        4.64158883,
+        10.0
+      ],
+      "n_seeds_disorder": 20,
+      "n_rewires": 20
+    },
+    "protocol_params": {
+      "epsilon_stab": 0.001,
+      "R_thr": 2.0,
+      "pT_min": 0.005,
+      "dt": 0.05,
+      "T_end": 10.0,
+      "burn_in": 0.5,
+      "hold_steps": 3
+    }
+  },
+  "subjects": {
+    "100206": {
+      "N": 234,
+      "E": 2982,
+      "file": "100206_repeated10_scale125.graphml"
+    },
+    "304727": {
+      "N": 234,
+      "E": 3451,
+      "file": "304727_repeated10_scale125.graphml"
+    },
+    "314225": {
+      "N": 234,
+      "E": 3134,
+      "file": "314225_repeated10_scale125.graphml"
+    },
+    "333330": {
+      "N": 234,
+      "E": 3602,
+      "file": "333330_repeated10_scale125.graphml"
+    },
+    "519647": {
+      "N": 234,
+      "E": 3265,
+      "file": "519647_repeated10_scale125.graphml"
+    }
+  },
+  "tasks": {
+    "T0_LOF_to_SF_RH": {
+      "description": "Right lateralorbitofrontal -> Right superiorfrontal (colleague tract). Negative-control port.",
+      "per_subject": {
+        "100206": {
+          "sources": [
+            {
+              "id": "1",
+              "fsname": "lateralorbitofrontal_1",
+              "hemisphere": "right"
+            },
+            {
+              "id": "2",
+              "fsname": "lateralorbitofrontal_2",
+              "hemisphere": "right"
+            },
+            {
+              "id": "3",
+              "fsname": "lateralorbitofrontal_3",
+              "hemisphere": "right"
+            },
+            {
+              "id": "4",
+              "fsname": "lateralorbitofrontal_4",
+              "hemisphere": "right"
+            }
+          ],
+          "targets": [
+            {
+              "id": "20",
+              "fsname": "superiorfrontal_1",
+              "hemisphere": "right"
+            },
+            {
+              "id": "21",
+              "fsname": "superiorfrontal_2",
+              "hemisphere": "right"
+            },
+            {
+              "id": "22",
+              "fsname": "superiorfrontal_3",
+              "hemisphere": "right"
+            },
+            {
+              "id": "23",
+              "fsname": "superiorfrontal_4",
+              "hemisphere": "right"
+            },
+            {
+              "id": "24",
+              "fsname": "superiorfrontal_5",
+              "hemisphere": "right"
+            },
+            {
+              "id": "25",
+              "fsname": "superiorfrontal_6",
+              "hemisphere": "right"
+            },
+            {
+              "id": "26",
+              "fsname": "superiorfrontal_7",
+              "hemisphere": "right"
+            },
+            {
+              "id": "27",
+              "fsname": "superiorfrontal_8",
+              "hemisphere": "right"
+            }
+          ],
+          "n_sources": 4,
+          "n_targets": 8
+        },
+        "304727": {
+          "sources": [
+            {
+              "id": "1",
+              "fsname": "lateralorbitofrontal_1",
+              "hemisphere": "right"
+            },
+            {
+              "id": "2",
+              "fsname": "lateralorbitofrontal_2",
+              "hemisphere": "right"
+            },
+            {
+              "id": "3",
+              "fsname": "lateralorbitofrontal_3",
+              "hemisphere": "right"
+            },
+            {
+              "id": "4",
+              "fsname": "lateralorbitofrontal_4",
+              "hemisphere": "right"
+            }
+          ],
+          "targets": [
+            {
+              "id": "20",
+              "fsname": "superiorfrontal_1",
+              "hemisphere": "right"
+            },
+            {
+              "id": "21",
+              "fsname": "superiorfrontal_2",
+              "hemisphere": "right"
+            },
+            {
+              "id": "22",
+              "fsname": "superiorfrontal_3",
+              "hemisphere": "right"
+            },
+            {
+              "id": "23",
+              "fsname": "superiorfrontal_4",
+              "hemisphere": "right"
+            },
+            {
+              "id": "24",
+              "fsname": "superiorfrontal_5",
+              "hemisphere": "right"
+            },
+            {
+              "id": "25",
+              "fsname": "superiorfrontal_6",
+              "hemisphere": "right"
+            },
+            {
+              "id": "26",
+              "fsname": "superiorfrontal_7",
+              "hemisphere": "right"
+            },
+            {
+              "id": "27",
+              "fsname": "superiorfrontal_8",
+              "hemisphere": "right"
+            }
+          ],
+          "n_sources": 4,
+          "n_targets": 8
+        },
+        "314225": {
+          "sources": [
+            {
+              "id": "1",
+              "fsname": "lateralorbitofrontal_1",
+              "hemisphere": "right"
+            },
+            {
+              "id": "2",
+              "fsname": "lateralorbitofrontal_2",
+              "hemisphere": "right"
+            },
+            {
+              "id": "3",
+              "fsname": "lateralorbitofrontal_3",
+              "hemisphere": "right"
+            },
+            {
+              "id": "4",
+              "fsname": "lateralorbitofrontal_4",
+              "hemisphere": "right"
+            }
+          ],
+          "targets": [
+            {
+              "id": "20",
+              "fsname": "superiorfrontal_1",
+              "hemisphere": "right"
+            },
+            {
+              "id": "21",
+              "fsname": "superiorfrontal_2",
+              "hemisphere": "right"
+            },
+            {
+              "id": "22",
+              "fsname": "superiorfrontal_3",
+              "hemisphere": "right"
+            },
+            {
+              "id": "23",
+              "fsname": "superiorfrontal_4",
+              "hemisphere": "right"
+            },
+            {
+              "id": "24",
+              "fsname": "superiorfrontal_5",
+              "hemisphere": "right"
+            },
+            {
+              "id": "25",
+              "fsname": "superiorfrontal_6",
+              "hemisphere": "right"
+            },
+            {
+              "id": "26",
+              "fsname": "superiorfrontal_7",
+              "hemisphere": "right"
+            },
+            {
+              "id": "27",
+              "fsname": "superiorfrontal_8",
+              "hemisphere": "right"
+            }
+          ],
+          "n_sources": 4,
+          "n_targets": 8
+        },
+        "333330": {
+          "sources": [
+            {
+              "id": "1",
+              "fsname": "lateralorbitofrontal_1",
+              "hemisphere": "right"
+            },
+            {
+              "id": "2",
+              "fsname": "lateralorbitofrontal_2",
+              "hemisphere": "right"
+            },
+            {
+              "id": "3",
+              "fsname": "lateralorbitofrontal_3",
+              "hemisphere": "right"
+            },
+            {
+              "id": "4",
+              "fsname": "lateralorbitofrontal_4",
+              "hemisphere": "right"
+            }
+          ],
+          "targets": [
+            {
+              "id": "20",
+              "fsname": "superiorfrontal_1",
+              "hemisphere": "right"
+            },
+            {
+              "id": "21",
+              "fsname": "superiorfrontal_2",
+              "hemisphere": "right"
+            },
+            {
+              "id": "22",
+              "fsname": "superiorfrontal_3",
+              "hemisphere": "right"
+            },
+            {
+              "id": "23",
+              "fsname": "superiorfrontal_4",
+              "hemisphere": "right"
+            },
+            {
+              "id": "24",
+              "fsname": "superiorfrontal_5",
+              "hemisphere": "right"
+            },
+            {
+              "id": "25",
+              "fsname": "superiorfrontal_6",
+              "hemisphere": "right"
+            },
+            {
+              "id": "26",
+              "fsname": "superiorfrontal_7",
+              "hemisphere": "right"
+            },
+            {
+              "id": "27",
+              "fsname": "superiorfrontal_8",
+              "hemisphere": "right"
+            }
+          ],
+          "n_sources": 4,
+          "n_targets": 8
+        },
+        "519647": {
+          "sources": [
+            {
+              "id": "1",
+              "fsname": "lateralorbitofrontal_1",
+              "hemisphere": "right"
+            },
+            {
+              "id": "2",
+              "fsname": "lateralorbitofrontal_2",
+              "hemisphere": "right"
+            },
+            {
+              "id": "3",
+              "fsname": "lateralorbitofrontal_3",
+              "hemisphere": "right"
+            },
+            {
+              "id": "4",
+              "fsname": "lateralorbitofrontal_4",
+              "hemisphere": "right"
+            }
+          ],
+          "targets": [
+            {
+              "id": "20",
+              "fsname": "superiorfrontal_1",
+              "hemisphere": "right"
+            },
+            {
+              "id": "21",
+              "fsname": "superiorfrontal_2",
+              "hemisphere": "right"
+            },
+            {
+              "id": "22",
+              "fsname": "superiorfrontal_3",
+              "hemisphere": "right"
+            },
+            {
+              "id": "23",
+              "fsname": "superiorfrontal_4",
+              "hemisphere": "right"
+            },
+            {
+              "id": "24",
+              "fsname": "superiorfrontal_5",
+              "hemisphere": "right"
+            },
+            {
+              "id": "25",
+              "fsname": "superiorfrontal_6",
+              "hemisphere": "right"
+            },
+            {
+              "id": "26",
+              "fsname": "superiorfrontal_7",
+              "hemisphere": "right"
+            },
+            {
+              "id": "27",
+              "fsname": "superiorfrontal_8",
+              "hemisphere": "right"
+            }
+          ],
+          "n_sources": 4,
+          "n_targets": 8
+        }
+      }
+    },
+    "T1_Sensory_to_Motor_LH": {
+      "description": "Left early sensory (visual+auditory+somatosensory) -> Left motor (precentral+paracentral).",
+      "per_subject": {
+        "100206": {
+          "sources": [
+            {
+              "id": "189",
+              "fsname": "cuneus_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "196",
+              "fsname": "lingual_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "197",
+              "fsname": "lingual_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "198",
+              "fsname": "lingual_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "199",
+              "fsname": "lingual_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "190",
+              "fsname": "pericalcarine_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "160",
+              "fsname": "postcentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "161",
+              "fsname": "postcentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "162",
+              "fsname": "postcentral_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "163",
+              "fsname": "postcentral_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "164",
+              "fsname": "postcentral_5",
+              "hemisphere": "left"
+            },
+            {
+              "id": "165",
+              "fsname": "postcentral_6",
+              "hemisphere": "left"
+            },
+            {
+              "id": "166",
+              "fsname": "postcentral_7",
+              "hemisphere": "left"
+            },
+            {
+              "id": "184",
+              "fsname": "precuneus_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "185",
+              "fsname": "precuneus_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "186",
+              "fsname": "precuneus_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "187",
+              "fsname": "precuneus_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "188",
+              "fsname": "precuneus_5",
+              "hemisphere": "left"
+            },
+            {
+              "id": "222",
+              "fsname": "transversetemporal_1",
+              "hemisphere": "left"
+            }
+          ],
+          "targets": [
+            {
+              "id": "153",
+              "fsname": "paracentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "154",
+              "fsname": "paracentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "145",
+              "fsname": "precentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "146",
+              "fsname": "precentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "147",
+              "fsname": "precentral_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "148",
+              "fsname": "precentral_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "149",
+              "fsname": "precentral_5",
+              "hemisphere": "left"
+            },
+            {
+              "id": "150",
+              "fsname": "precentral_6",
+              "hemisphere": "left"
+            },
+            {
+              "id": "151",
+              "fsname": "precentral_7",
+              "hemisphere": "left"
+            },
+            {
+              "id": "152",
+              "fsname": "precentral_8",
+              "hemisphere": "left"
+            }
+          ],
+          "n_sources": 19,
+          "n_targets": 10
+        },
+        "304727": {
+          "sources": [
+            {
+              "id": "189",
+              "fsname": "cuneus_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "196",
+              "fsname": "lingual_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "197",
+              "fsname": "lingual_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "198",
+              "fsname": "lingual_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "199",
+              "fsname": "lingual_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "190",
+              "fsname": "pericalcarine_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "160",
+              "fsname": "postcentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "161",
+              "fsname": "postcentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "162",
+              "fsname": "postcentral_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "163",
+              "fsname": "postcentral_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "164",
+              "fsname": "postcentral_5",
+              "hemisphere": "left"
+            },
+            {
+              "id": "165",
+              "fsname": "postcentral_6",
+              "hemisphere": "left"
+            },
+            {
+              "id": "166",
+              "fsname": "postcentral_7",
+              "hemisphere": "left"
+            },
+            {
+              "id": "184",
+              "fsname": "precuneus_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "185",
+              "fsname": "precuneus_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "186",
+              "fsname": "precuneus_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "187",
+              "fsname": "precuneus_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "188",
+              "fsname": "precuneus_5",
+              "hemisphere": "left"
+            },
+            {
+              "id": "222",
+              "fsname": "transversetemporal_1",
+              "hemisphere": "left"
+            }
+          ],
+          "targets": [
+            {
+              "id": "153",
+              "fsname": "paracentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "154",
+              "fsname": "paracentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "145",
+              "fsname": "precentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "146",
+              "fsname": "precentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "147",
+              "fsname": "precentral_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "148",
+              "fsname": "precentral_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "149",
+              "fsname": "precentral_5",
+              "hemisphere": "left"
+            },
+            {
+              "id": "150",
+              "fsname": "precentral_6",
+              "hemisphere": "left"
+            },
+            {
+              "id": "151",
+              "fsname": "precentral_7",
+              "hemisphere": "left"
+            },
+            {
+              "id": "152",
+              "fsname": "precentral_8",
+              "hemisphere": "left"
+            }
+          ],
+          "n_sources": 19,
+          "n_targets": 10
+        },
+        "314225": {
+          "sources": [
+            {
+              "id": "189",
+              "fsname": "cuneus_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "196",
+              "fsname": "lingual_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "197",
+              "fsname": "lingual_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "198",
+              "fsname": "lingual_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "199",
+              "fsname": "lingual_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "190",
+              "fsname": "pericalcarine_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "160",
+              "fsname": "postcentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "161",
+              "fsname": "postcentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "162",
+              "fsname": "postcentral_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "163",
+              "fsname": "postcentral_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "164",
+              "fsname": "postcentral_5",
+              "hemisphere": "left"
+            },
+            {
+              "id": "165",
+              "fsname": "postcentral_6",
+              "hemisphere": "left"
+            },
+            {
+              "id": "166",
+              "fsname": "postcentral_7",
+              "hemisphere": "left"
+            },
+            {
+              "id": "184",
+              "fsname": "precuneus_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "185",
+              "fsname": "precuneus_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "186",
+              "fsname": "precuneus_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "187",
+              "fsname": "precuneus_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "188",
+              "fsname": "precuneus_5",
+              "hemisphere": "left"
+            },
+            {
+              "id": "222",
+              "fsname": "transversetemporal_1",
+              "hemisphere": "left"
+            }
+          ],
+          "targets": [
+            {
+              "id": "153",
+              "fsname": "paracentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "154",
+              "fsname": "paracentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "145",
+              "fsname": "precentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "146",
+              "fsname": "precentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "147",
+              "fsname": "precentral_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "148",
+              "fsname": "precentral_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "149",
+              "fsname": "precentral_5",
+              "hemisphere": "left"
+            },
+            {
+              "id": "150",
+              "fsname": "precentral_6",
+              "hemisphere": "left"
+            },
+            {
+              "id": "151",
+              "fsname": "precentral_7",
+              "hemisphere": "left"
+            },
+            {
+              "id": "152",
+              "fsname": "precentral_8",
+              "hemisphere": "left"
+            }
+          ],
+          "n_sources": 19,
+          "n_targets": 10
+        },
+        "333330": {
+          "sources": [
+            {
+              "id": "189",
+              "fsname": "cuneus_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "196",
+              "fsname": "lingual_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "197",
+              "fsname": "lingual_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "198",
+              "fsname": "lingual_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "199",
+              "fsname": "lingual_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "190",
+              "fsname": "pericalcarine_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "160",
+              "fsname": "postcentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "161",
+              "fsname": "postcentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "162",
+              "fsname": "postcentral_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "163",
+              "fsname": "postcentral_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "164",
+              "fsname": "postcentral_5",
+              "hemisphere": "left"
+            },
+            {
+              "id": "165",
+              "fsname": "postcentral_6",
+              "hemisphere": "left"
+            },
+            {
+              "id": "166",
+              "fsname": "postcentral_7",
+              "hemisphere": "left"
+            },
+            {
+              "id": "184",
+              "fsname": "precuneus_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "185",
+              "fsname": "precuneus_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "186",
+              "fsname": "precuneus_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "187",
+              "fsname": "precuneus_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "188",
+              "fsname": "precuneus_5",
+              "hemisphere": "left"
+            },
+            {
+              "id": "222",
+              "fsname": "transversetemporal_1",
+              "hemisphere": "left"
+            }
+          ],
+          "targets": [
+            {
+              "id": "153",
+              "fsname": "paracentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "154",
+              "fsname": "paracentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "145",
+              "fsname": "precentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "146",
+              "fsname": "precentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "147",
+              "fsname": "precentral_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "148",
+              "fsname": "precentral_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "149",
+              "fsname": "precentral_5",
+              "hemisphere": "left"
+            },
+            {
+              "id": "150",
+              "fsname": "precentral_6",
+              "hemisphere": "left"
+            },
+            {
+              "id": "151",
+              "fsname": "precentral_7",
+              "hemisphere": "left"
+            },
+            {
+              "id": "152",
+              "fsname": "precentral_8",
+              "hemisphere": "left"
+            }
+          ],
+          "n_sources": 19,
+          "n_targets": 10
+        },
+        "519647": {
+          "sources": [
+            {
+              "id": "189",
+              "fsname": "cuneus_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "196",
+              "fsname": "lingual_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "197",
+              "fsname": "lingual_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "198",
+              "fsname": "lingual_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "199",
+              "fsname": "lingual_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "190",
+              "fsname": "pericalcarine_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "160",
+              "fsname": "postcentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "161",
+              "fsname": "postcentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "162",
+              "fsname": "postcentral_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "163",
+              "fsname": "postcentral_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "164",
+              "fsname": "postcentral_5",
+              "hemisphere": "left"
+            },
+            {
+              "id": "165",
+              "fsname": "postcentral_6",
+              "hemisphere": "left"
+            },
+            {
+              "id": "166",
+              "fsname": "postcentral_7",
+              "hemisphere": "left"
+            },
+            {
+              "id": "184",
+              "fsname": "precuneus_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "185",
+              "fsname": "precuneus_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "186",
+              "fsname": "precuneus_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "187",
+              "fsname": "precuneus_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "188",
+              "fsname": "precuneus_5",
+              "hemisphere": "left"
+            },
+            {
+              "id": "222",
+              "fsname": "transversetemporal_1",
+              "hemisphere": "left"
+            }
+          ],
+          "targets": [
+            {
+              "id": "153",
+              "fsname": "paracentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "154",
+              "fsname": "paracentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "145",
+              "fsname": "precentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "146",
+              "fsname": "precentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "147",
+              "fsname": "precentral_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "148",
+              "fsname": "precentral_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "149",
+              "fsname": "precentral_5",
+              "hemisphere": "left"
+            },
+            {
+              "id": "150",
+              "fsname": "precentral_6",
+              "hemisphere": "left"
+            },
+            {
+              "id": "151",
+              "fsname": "precentral_7",
+              "hemisphere": "left"
+            },
+            {
+              "id": "152",
+              "fsname": "precentral_8",
+              "hemisphere": "left"
+            }
+          ],
+          "n_sources": 19,
+          "n_targets": 10
+        }
+      }
+    },
+    "T2_BG_to_Thal_Pall_LH": {
+      "description": "Basal ganglia gate: Left striatum (caudate+putamen+accumbens) -> Left pallidum+thalamus.",
+      "per_subject": {
+        "100206": {
+          "sources": [
+            {
+              "id": "231",
+              "fsname": "Left-Accumbens-area",
+              "hemisphere": "left"
+            },
+            {
+              "id": "228",
+              "fsname": "Left-Caudate",
+              "hemisphere": "left"
+            },
+            {
+              "id": "229",
+              "fsname": "Left-Putamen",
+              "hemisphere": "left"
+            }
+          ],
+          "targets": [
+            {
+              "id": "230",
+              "fsname": "Left-Pallidum",
+              "hemisphere": "left"
+            },
+            {
+              "id": "227",
+              "fsname": "Left-Thalamus-Proper",
+              "hemisphere": "left"
+            }
+          ],
+          "n_sources": 3,
+          "n_targets": 2
+        },
+        "304727": {
+          "sources": [
+            {
+              "id": "231",
+              "fsname": "Left-Accumbens-area",
+              "hemisphere": "left"
+            },
+            {
+              "id": "228",
+              "fsname": "Left-Caudate",
+              "hemisphere": "left"
+            },
+            {
+              "id": "229",
+              "fsname": "Left-Putamen",
+              "hemisphere": "left"
+            }
+          ],
+          "targets": [
+            {
+              "id": "230",
+              "fsname": "Left-Pallidum",
+              "hemisphere": "left"
+            },
+            {
+              "id": "227",
+              "fsname": "Left-Thalamus-Proper",
+              "hemisphere": "left"
+            }
+          ],
+          "n_sources": 3,
+          "n_targets": 2
+        },
+        "314225": {
+          "sources": [
+            {
+              "id": "231",
+              "fsname": "Left-Accumbens-area",
+              "hemisphere": "left"
+            },
+            {
+              "id": "228",
+              "fsname": "Left-Caudate",
+              "hemisphere": "left"
+            },
+            {
+              "id": "229",
+              "fsname": "Left-Putamen",
+              "hemisphere": "left"
+            }
+          ],
+          "targets": [
+            {
+              "id": "230",
+              "fsname": "Left-Pallidum",
+              "hemisphere": "left"
+            },
+            {
+              "id": "227",
+              "fsname": "Left-Thalamus-Proper",
+              "hemisphere": "left"
+            }
+          ],
+          "n_sources": 3,
+          "n_targets": 2
+        },
+        "333330": {
+          "sources": [
+            {
+              "id": "231",
+              "fsname": "Left-Accumbens-area",
+              "hemisphere": "left"
+            },
+            {
+              "id": "228",
+              "fsname": "Left-Caudate",
+              "hemisphere": "left"
+            },
+            {
+              "id": "229",
+              "fsname": "Left-Putamen",
+              "hemisphere": "left"
+            }
+          ],
+          "targets": [
+            {
+              "id": "230",
+              "fsname": "Left-Pallidum",
+              "hemisphere": "left"
+            },
+            {
+              "id": "227",
+              "fsname": "Left-Thalamus-Proper",
+              "hemisphere": "left"
+            }
+          ],
+          "n_sources": 3,
+          "n_targets": 2
+        },
+        "519647": {
+          "sources": [
+            {
+              "id": "231",
+              "fsname": "Left-Accumbens-area",
+              "hemisphere": "left"
+            },
+            {
+              "id": "228",
+              "fsname": "Left-Caudate",
+              "hemisphere": "left"
+            },
+            {
+              "id": "229",
+              "fsname": "Left-Putamen",
+              "hemisphere": "left"
+            }
+          ],
+          "targets": [
+            {
+              "id": "230",
+              "fsname": "Left-Pallidum",
+              "hemisphere": "left"
+            },
+            {
+              "id": "227",
+              "fsname": "Left-Thalamus-Proper",
+              "hemisphere": "left"
+            }
+          ],
+          "n_sources": 3,
+          "n_targets": 2
+        }
+      }
+    },
+    "T3_Thal_to_Motor_LH": {
+      "description": "Thalamo-motor: Left-Thalamus-Proper -> Left precentral+paracentral.",
+      "per_subject": {
+        "100206": {
+          "sources": [
+            {
+              "id": "227",
+              "fsname": "Left-Thalamus-Proper",
+              "hemisphere": "left"
+            }
+          ],
+          "targets": [
+            {
+              "id": "153",
+              "fsname": "paracentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "154",
+              "fsname": "paracentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "145",
+              "fsname": "precentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "146",
+              "fsname": "precentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "147",
+              "fsname": "precentral_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "148",
+              "fsname": "precentral_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "149",
+              "fsname": "precentral_5",
+              "hemisphere": "left"
+            },
+            {
+              "id": "150",
+              "fsname": "precentral_6",
+              "hemisphere": "left"
+            },
+            {
+              "id": "151",
+              "fsname": "precentral_7",
+              "hemisphere": "left"
+            },
+            {
+              "id": "152",
+              "fsname": "precentral_8",
+              "hemisphere": "left"
+            }
+          ],
+          "n_sources": 1,
+          "n_targets": 10
+        },
+        "304727": {
+          "sources": [
+            {
+              "id": "227",
+              "fsname": "Left-Thalamus-Proper",
+              "hemisphere": "left"
+            }
+          ],
+          "targets": [
+            {
+              "id": "153",
+              "fsname": "paracentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "154",
+              "fsname": "paracentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "145",
+              "fsname": "precentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "146",
+              "fsname": "precentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "147",
+              "fsname": "precentral_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "148",
+              "fsname": "precentral_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "149",
+              "fsname": "precentral_5",
+              "hemisphere": "left"
+            },
+            {
+              "id": "150",
+              "fsname": "precentral_6",
+              "hemisphere": "left"
+            },
+            {
+              "id": "151",
+              "fsname": "precentral_7",
+              "hemisphere": "left"
+            },
+            {
+              "id": "152",
+              "fsname": "precentral_8",
+              "hemisphere": "left"
+            }
+          ],
+          "n_sources": 1,
+          "n_targets": 10
+        },
+        "314225": {
+          "sources": [
+            {
+              "id": "227",
+              "fsname": "Left-Thalamus-Proper",
+              "hemisphere": "left"
+            }
+          ],
+          "targets": [
+            {
+              "id": "153",
+              "fsname": "paracentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "154",
+              "fsname": "paracentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "145",
+              "fsname": "precentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "146",
+              "fsname": "precentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "147",
+              "fsname": "precentral_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "148",
+              "fsname": "precentral_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "149",
+              "fsname": "precentral_5",
+              "hemisphere": "left"
+            },
+            {
+              "id": "150",
+              "fsname": "precentral_6",
+              "hemisphere": "left"
+            },
+            {
+              "id": "151",
+              "fsname": "precentral_7",
+              "hemisphere": "left"
+            },
+            {
+              "id": "152",
+              "fsname": "precentral_8",
+              "hemisphere": "left"
+            }
+          ],
+          "n_sources": 1,
+          "n_targets": 10
+        },
+        "333330": {
+          "sources": [
+            {
+              "id": "227",
+              "fsname": "Left-Thalamus-Proper",
+              "hemisphere": "left"
+            }
+          ],
+          "targets": [
+            {
+              "id": "153",
+              "fsname": "paracentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "154",
+              "fsname": "paracentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "145",
+              "fsname": "precentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "146",
+              "fsname": "precentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "147",
+              "fsname": "precentral_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "148",
+              "fsname": "precentral_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "149",
+              "fsname": "precentral_5",
+              "hemisphere": "left"
+            },
+            {
+              "id": "150",
+              "fsname": "precentral_6",
+              "hemisphere": "left"
+            },
+            {
+              "id": "151",
+              "fsname": "precentral_7",
+              "hemisphere": "left"
+            },
+            {
+              "id": "152",
+              "fsname": "precentral_8",
+              "hemisphere": "left"
+            }
+          ],
+          "n_sources": 1,
+          "n_targets": 10
+        },
+        "519647": {
+          "sources": [
+            {
+              "id": "227",
+              "fsname": "Left-Thalamus-Proper",
+              "hemisphere": "left"
+            }
+          ],
+          "targets": [
+            {
+              "id": "153",
+              "fsname": "paracentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "154",
+              "fsname": "paracentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "145",
+              "fsname": "precentral_1",
+              "hemisphere": "left"
+            },
+            {
+              "id": "146",
+              "fsname": "precentral_2",
+              "hemisphere": "left"
+            },
+            {
+              "id": "147",
+              "fsname": "precentral_3",
+              "hemisphere": "left"
+            },
+            {
+              "id": "148",
+              "fsname": "precentral_4",
+              "hemisphere": "left"
+            },
+            {
+              "id": "149",
+              "fsname": "precentral_5",
+              "hemisphere": "left"
+            },
+            {
+              "id": "150",
+              "fsname": "precentral_6",
+              "hemisphere": "left"
+            },
+            {
+              "id": "151",
+              "fsname": "precentral_7",
+              "hemisphere": "left"
+            },
+            {
+              "id": "152",
+              "fsname": "precentral_8",
+              "hemisphere": "left"
+            }
+          ],
+          "n_sources": 1,
+          "n_targets": 10
+        }
+      }
+    }
+  }
+}
