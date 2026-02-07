@@ -6,7 +6,7 @@ authors:
     orcid: "https://orcid.org/0009-0008-0159-1718"
 title: "CRN-HCP-ENAQT: Noise-Assisted Transport in Human Connectome Subgraphs"
 version: v1.1
-doi: 10.5281/zenodo.18519174
+doi: 10.5281/zenodo.18519173
 date-released: "2026-02-07"
 url: "https://github.com/ovdspb-code/CRN-HCP-ENAQT"
 license: MIT
