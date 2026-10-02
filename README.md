@@ -5,7 +5,9 @@
 
 Code and data for:
 
-> Dolgikh O. (2026). Noise-Assisted Transport Windows in Human Connectome Subgraphs: Evidence from Basal Ganglia and Motor Pathways. *PLOS Computational Biology* (submitted).
+> Dolgikh O. (2026). Noise-Assisted Transport Windows in Human Connectome Subgraphs: Evidence from Basal Ganglia and Motor Pathways. Zenodo preprint, [doi:10.5281/zenodo.18773244](https://doi.org/10.5281/zenodo.18773244).
+
+The manuscript is a preprint. The repository and its Zenodo releases provide research software and reproducibility materials.
 
 ## Overview
 
